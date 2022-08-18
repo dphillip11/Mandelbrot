@@ -4,8 +4,8 @@ import numpy as np
 # define co-ordinates
 SIZE = 4000
 zoom = 666
-offset_Real = -0.0002292152534783858749515779689806;
-offset_Imag = -1.9416171784159214980185320931463369;
+offset_Real = -1.9416171784159214980185320931463369
+offset_Imag = -0.0002292152534783858749515779689806
 image = np.zeros((SIZE, SIZE, 3), dtype=np.uint8)
 
 def RgbColormap(v):
