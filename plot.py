@@ -3,20 +3,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-SIZE = 4000
-
 
 #Re = []
 #Im = []
 M = []
 
-with open('000.csv', 'r') as File:
+row_count = 0
+with open('mandelbrot.csv', 'r') as File:
     Lines = csv.reader(File)
 
     for row in Lines:
         #Re.append(row[0])
         #Im.append(row[1])
         M.append(row[0])
+        row_count += 1
+
+SIZE = row_count
 
 def RgbColormap(v):
     if (v % 8) == 0:
