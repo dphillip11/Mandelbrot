@@ -1,7 +1,9 @@
+from math import sqrt
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
+import math
 
 
 #Re = []
@@ -9,7 +11,7 @@ import csv
 M = []
 
 row_count = 0
-with open('mandelbrot.csv', 'r') as File:
+with open('test.csv', 'r') as File:
     Lines = csv.reader(File)
 
     for row in Lines:
@@ -18,7 +20,7 @@ with open('mandelbrot.csv', 'r') as File:
         M.append(row[0])
         row_count += 1
 
-SIZE = row_count
+SIZE = int(math.sqrt(row_count - 1))
 
 def RgbColormap(v):
     if (v % 8) == 0:
