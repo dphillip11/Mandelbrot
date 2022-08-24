@@ -1,4 +1,4 @@
-#include "bmp.h"
+#include "colormap.h"
 #include <stdlib.h>
 
 //array of linearly spaced values

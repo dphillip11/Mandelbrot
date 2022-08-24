@@ -1,11 +1,4 @@
-
-
-typedef struct
-{
-	double re;
-	double im;
-}
-complex;
+#include "complex.h"
 
 complex csum(complex x, complex y)
 {

@@ -1,3 +1,6 @@
+#include "create_bitmap.h"
+
+
 //This will open a file, write the BMP header and return the pointer to the file
 FILE* create_bitmap()
 {

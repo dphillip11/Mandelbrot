@@ -1,13 +1,11 @@
-#define ITER 360
-#define SIZE 4000
-#define COLORS 20
 #include <stdio.h>
-#include "complex.c"
-#include "colormap.c"
+#include "complex.h"
+#include "colormap.h"
+#include "create_bitmap.h"
 
+#define ITER 360
+ 
 RGBTRIPLE image[SIZE][SIZE];
-
-#include "create_bitmap.c"
 
 
 int mandelbrot(complex z)
