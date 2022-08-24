@@ -27,7 +27,7 @@ def RgbColormap(v):
     if (v % 8) == 7:
         return(5, 242, 40)
 
-
+object_d = {'x': 0, 'y': 0, 'z': 0}
 
 # define the range of the complex plane
 for i in range(SIZE):

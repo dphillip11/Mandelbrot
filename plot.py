@@ -6,12 +6,13 @@ import csv
 import math
 
 
+
 #Re = []
 #Im = []
 M = []
 
 row_count = 0
-with open('test.csv', 'r') as File:
+with open('000.csv', 'r') as File:
     Lines = csv.reader(File)
 
     for row in Lines:
